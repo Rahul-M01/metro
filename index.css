@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas Neue");
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; }
+  body a {
+    text-decoration: none; }
+
+/*=================================================
+                    Navbar
+=================================================*/
+header {
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); }
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.logo-box {
+  float: left;
+  margin-right: 20px; }
+
+.logo-box a {
+  outline: none;
+  display: block; }
+
+.logo-box img {
+  display: block; }
+
+nav {
+  overflow: hidden; }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right; }
+
+nav li {
+  display: inline-block;
+  margin-left: 55px;
+  height: 70px;
+  line-height: 70px;
+  transition: .5s linear;
+  font-size: 1.75rem; }
+
+nav a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #868686;
+  text-transform: uppercase; }
+
+nav a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  background: #868686;
+  transition: width .5s linear; }
+
+nav a:hover:after {
+  width: 100%;
+  text-decoration: none; }
+
+@media screen and (max-width: 660px) {
+  header {
+    text-align: center; }
+
+  .logo-box {
+    float: none;
+    display: inline-block;
+    margin: 0 0 16px 0; }
+
+  ul {
+    float: none; }
+
+  nav li:first-of-type {
+    margin-left: 0; } }
+@media screen and (max-width: 550px) {
+  nav {
+    overflow: visible; }
+
+  nav li {
+    display: block;
+    margin: 0;
+    height: 40px;
+    line-height: 40px; }
+
+  nav li:hover {
+    background: rgba(0, 0, 0, 0.1); }
+
+  nav a:after {
+    content: none; } }
+/*=================================================
+                    Top Of Page
+=================================================*/
+.header-photo {
+  width: 100%;
+  height: 90%; }
+
+/*=================================================
+                    About Section
+=================================================*/
+.about {
+  font-family: "Poppins", sans-serif !important;
+  margin-top: 10%; }
+
+/*================================================================
+						Fixed Image
+================================================================*/
+#hero1 {
+  background: url(https://4.bp.blogspot.com/_AQ0vcRxFu0A/S9shDGGyMTI/AAAAAAAAAYk/kn3WTkY2LoQ/s1600/IMG_0714.JPG);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+
+.hero, .content {
+  text-align: center;
+  position: relative;
+  width: 100%; }
+
+.inner {
+  min-height: 600px;
+  position: relative; }
+
+.hero .inner {
+  background: rgba(0, 0, 0, 0.7) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat; }
+
+.copy {
+  position: absolute;
+  top: 50%;
+  height: 10em;
+  margin-top: -5em;
+  width: 100%; }
+
+/*================================================================
+						Cards
+================================================================*/
+.container-fluid h1 {
+  font-family: 'Bebas Neue';
+  font-size: 6rem; }
+
+.gradient-line {
+  margin: 0 0 50px 0;
+  display: block;
+  border: none;
+  height: 3px;
+  background: #0071B9;
+  background: linear-gradient(to right, white, #0071B9, #26ABFF, #0071B9, white);
+  margin: 0 auto;
+  width: 400px; }
+
+.box {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.our-services {
+  margin-top: 75px;
+  padding-bottom: 30px;
+  padding: 0 60px;
+  min-height: 198px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all .4s ease-in-out;
+  box-shadow: 0 0 25px 0 rgba(20, 27, 202, 0.17); }
+
+.our-services .icon {
+  margin-bottom: -21px;
+  transform: translateY(-50%);
+  text-align: center; }
+
+.our-services:hover h4,
+.our-services:hover p {
+  color: #fff; }
+
+.speedup:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%); }
+
+.settings:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%); }
+
+.privacy:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%); }
+
+.backups:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%); }
+
+.ssl:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%); }
+
+.database:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%); }
+
+/*================================================================
+						Stats
+================================================================*/
+a {
+  outline: none !important; }
+
+.stat {
+  margin: 150px auto;
+  text-align: center; }
+
+.highlight {
+  color: #111;
+  padding: 20px 0;
+  font-weight: bold;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 0;
+  font-size: 48px; }
+
+.stat i {
+  color: #f7c221; }
+
+.milestone-details {
+  font-weight: bold;
+  font-size: 18px;
+  color: #999;
+  margin-bottom: 150px; }
+
+/*================================================================
+						Map
+================================================================*/
+#map {
+  height: 60%;
+  filter: invert(92%) contrast(83%);
+  width: 100%; }
+
+/*# sourceMappingURL=index.css.map */
