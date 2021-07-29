@@ -179,12 +179,14 @@ nav a:after {content: none;}
 @import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bebas Neue');
 
-.container-fluid
+
+.container-fluid, .fancy-title
 {
     h1
     {
         font-family: 'Bebas Neue';  font-size: 6rem;
     }
+
 }
 
 .gradient-line{ 
@@ -198,6 +200,16 @@ nav a:after {content: none;}
     width: 400px;
 }
 
+.gradient-line2{ 
+    margin: 0 0 50px 0;
+    display: block;
+    border: none;
+    height: 3px;
+    background: #0071B9;
+    background: linear-gradient(to right, rgb(218, 215, 215), #0071B9, #26ABFF, #0071B9, rgb(218, 215, 215));
+    margin: 0 auto;
+    width: 400px;
+}
 .box {
     position: relative;
     width: 100%;
@@ -301,7 +313,48 @@ a{
 ================================================================*/
 
 #map{
-    height: 60%;
     filter: invert(92%) contrast(83%);
-    width: 100%;
   }
+
+
+/*================================================================
+						Footer
+================================================================*/
+
+footer {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/simple-footer.png') repeat center;
+    display: table;
+    width: 100vw;
+    height: 8rem;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  footer small {
+    color: #ccc;
+    letter-spacing: .025rem;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  
+  .footer-nav a {
+    color: #c74f78;
+    text-decoration: none;
+    margin: 0 .5rem;
+    display: inline-block;
+  }
+  
+  .footer-nav a:hover {
+    color: #f26896;
+    transition: color .15s ease-in-out;
+  }
+  
+  
+  

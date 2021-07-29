@@ -141,7 +141,7 @@ nav a:hover:after {
 /*================================================================
 						Cards
 ================================================================*/
-.container-fluid h1 {
+.container-fluid h1, .fancy-title h1 {
   font-family: 'Bebas Neue';
   font-size: 6rem; }
 
@@ -152,6 +152,16 @@ nav a:hover:after {
   height: 3px;
   background: #0071B9;
   background: linear-gradient(to right, white, #0071B9, #26ABFF, #0071B9, white);
+  margin: 0 auto;
+  width: 400px; }
+
+.gradient-line2 {
+  margin: 0 0 50px 0;
+  display: block;
+  border: none;
+  height: 3px;
+  background: #0071B9;
+  background: linear-gradient(to right, #dad7d7, #0071B9, #26ABFF, #0071B9, #dad7d7);
   margin: 0 auto;
   width: 400px; }
 
@@ -243,8 +253,39 @@ a {
 						Map
 ================================================================*/
 #map {
-  height: 60%;
-  filter: invert(92%) contrast(83%);
-  width: 100%; }
+  filter: invert(92%) contrast(83%); }
+
+/*================================================================
+						Footer
+================================================================*/
+footer {
+  background: url("https://orange.codeberryschool.com/content/images/project-assets/simple-footer.png") repeat center;
+  display: table;
+  width: 100vw;
+  height: 8rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem; }
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle; }
+
+footer small {
+  color: #ccc;
+  letter-spacing: .025rem;
+  margin-bottom: 1.5rem;
+  display: block; }
+
+.footer-nav a {
+  color: #c74f78;
+  text-decoration: none;
+  margin: 0 .5rem;
+  display: inline-block; }
+
+.footer-nav a:hover {
+  color: #f26896;
+  transition: color .15s ease-in-out; }
 
 /*# sourceMappingURL=index.css.map */
